@@ -9,6 +9,8 @@
     left: 0;
     right: 0;
     background-color: rgb(66, 66, 67 , 98%);
+    box-shadow: 0 5px 5px 5px rgba(246, 246, 246, 0.1);
+
 }
 
 .navbar{
@@ -21,6 +23,7 @@
     flex-wrap: nowrap;
     align-content: center;
     align-items: center;
+
 
 
 }
@@ -44,6 +47,7 @@
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
     transition: all 0.3s ease-in-out;
+    margin-left: 10px;
 
 }
 .logo >h1:hover{
@@ -175,10 +179,15 @@
 /*#################################courses####################################*/
 
 .courses{
+
     width: 100%;
     margin: 0;
-    padding: 10px;
+    padding: 50px 0;
     margin-top: 50px;
+    background-image: url("./img/pc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .cards{
     width: 100%;
@@ -187,6 +196,9 @@
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 10px;
+
+
+
 
 }
 .card{
@@ -200,7 +212,7 @@
     background-color: #454546;
     border-radius: 10px;
     box-shadow: 0px 0px 40px 0px rgb(69, 69, 70);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
     cursor: pointer;
     padding: 10px;
     flex-wrap: wrap;
@@ -210,11 +222,350 @@
 .card:hover{
     box-shadow: 0px 0px 30px 0px rgb(255, 255, 255);
     background-color: rgb(66, 66, 67 , 90%);
-
+    transform: scale(1.08);
 
 
 }
 .card>h2{
     color: #d3d5d7;
     font-size: 1.5rem;
+    transition: transform .6s;
+}
+.card>h2:hover{
+    color: #ffffff;
+
+}
+
+.about{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #dadad8;
+    margin: 0;
+    padding-bottom: 80px;
+    box-shadow: -5px 40px 30px 0 #a6a6a6;
+    background-image: url("./img/back2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+.about-content{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 5px ;
+    padding-right: 8rem;
+    margin: 10px;
+
+}
+.about-text{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-text>p{
+    letter-spacing: 3px;
+}
+.about-text>h2{
+    letter-spacing: 2px;
+    font-size: 2rem;
+    opacity: 80%;
+    font-family:   sans-serif;
+    color: #454546;
+    margin-bottom: 40px
+}
+.about-text>button{
+    border-radius: 10px;
+    color: #454546;
+    font-size: 0.9rem;
+    font-family: "ui-monospace",sans-serif;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    padding: 12px 28px;
+    max-width: 170px;
+
+}
+.about-text>button:hover{
+    transform: scale(1.1);
+    border: 2px solid #8a8989;
+    font-weight: 500;
+}
+
+.about-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer ;
+}
+
+.about-video>iframe{
+
+    width: 500px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 60px 0 rgb(98, 97, 97);
+    transition: all 0.8s ease-in-out;
+    cursor: pointer ;
+
+}
+.about-video>iframe:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 30px 0 rgb(187, 187, 187);
+}
+
+
+/*####################3*/
+.jobs{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #d3d3d3;
+    margin: 30px 0;
+    background-image: url("./img/back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+.jobs-content{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 5px ;
+
+}
+.jobs-text{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.jobs-text>p{
+    letter-spacing: 3px;
+}
+.jobs-type{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 10px 50px ;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+
+}
+.jobs-type>button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #8a8989;
+    color: #717175;
+    font-size: 0.7rem;
+    font-family:   sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 5px 0 rgb(98, 97, 97);
+
+
+}
+.jobs-type>button:hover{
+    transform: scale(1.25);
+    border: 1px solid #8a8989;
+    box-shadow: 0 0 15px 0 rgb(98, 97, 97);
+}
+
+.jobs-cards{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 10px 50px ;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.job-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 22%;
+    height: 300px;
+    max-height: 400px;
+    background-color: #444445;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgb(239, 236, 236);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    opacity: 80%;
+}
+.job-card:hover{
+    transform: scale(1.1);
+    border: 1px solid #8a8989;
+    box-shadow: 0px 0px 40px 0px rgb(162, 162, 166);
+    opacity: 100%;
+
+}
+.job-card >h2{
+    color: #d3d5d7;
+    font-size: 1.5rem;
+    transition: transform 1s;
+}
+.job-card >h2:hover{
+    color: #ffffff;
+
+}
+
+/*################################kurslar############################################*/
+
+.kurslar{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.kurslar-type{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 10px ;
+}
+.kurslar>h1{
+    letter-spacing: 3px;
+    font-size: 2.2rem;
+    opacity: 80%;
+    font-family:   sans-serif;
+    color: #323233;
+    margin-bottom: 40px
+}
+
+
+.kurslar-type>button {
+
+    border:none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid #8a8989;
+
+    color: #3a3a3b;
+    font-size: 1rem;
+    font-family: "Arial Black", Gadget, sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.kurslar-type>button:hover{
+    border-bottom: 2px solid #000000;
+}
+.kurslar-type>button:active{
+    transform: scale(1.1);
+    border-bottom: 2px solid #444445;
+}
+
+/*################################################################*/
+.kurslar-cards{
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+.kurslar-card{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    justify-content: space-between;
+    max-width: 310px;
+    height:auto;
+    margin-bottom: 0;
+    border-radius: 10px;
+    padding: 5px;
+    border-style: solid;
+
+}
+.kurslar-card>img{
+    max-width: 300px;
+    max-height: 150px;
+    border-radius: 10px;
+
+}
+.kurslar-card>p1{
+    font-size: 1rem;
+    font-family: Gadget, sans-serif;
+    font-weight: bold;
+    color: #323233;
+    margin: 5px 0;
+    text-transform: capitalize;
+}
+.kurslar-card>p2{
+    font-size: 0.8rem;
+    font-family:  Ubuntu, sans-serif;
+    color: #878787;
+    text-transform: lowercase;
+}
+.kurslar-card>h2{
+    font-size: 1.3rem;
+    font-family:  Ubuntu, sans-serif;
+    color: #3a3939;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+
+}
+.kurslar-card>p3{
+    font-size: 0.8rem;
+    font-family:  Ubuntu, sans-serif;
+    color: #4f4e4e;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+.kurslar-card>p4{
+    font-size: 1rem;
+    font-family:  "Arial Black", sans-serif;
+    color: #424243;
+    margin: 5px 0;
+}
+.kurslar-card>button{
+    color: #424243;
+    font-size: 1rem;
+    font-family: "Arial Black", Gadget, sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 20px 0;
+    border-radius: 10px;
+    padding: 3px 15px;
+}
+.kurslar-card>button:hover{
+
+    box-shadow: 0 0px 10px 0px rgb(66, 66, 67);
+    transform: scale(0.9);
+
 }
