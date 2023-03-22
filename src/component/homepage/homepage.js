@@ -1,7 +1,7 @@
 import React from "react";
 import './style.css'
 import logo from './icons8-bash-480.svg'
-import img from './img/pc.jpg'
+import img from './img/eve.jpg'
 import wall from './img/wall.jpg'
 import robot from './img/robot.png'
 
@@ -248,17 +248,23 @@ function Homepage() {
 
 
         </div>
-        <div className={'contact-form'}>
-            <h1>Ma'lumotlaringizni qoldiring va sizga tez fursatda aloqaga chiqamiz</h1>
-            <div className={'contact-form-input'}>
-                <input type="text" placeholder={'Ismingiz'}/>
-                <input type="text" placeholder={'Telefon raqamingiz'}/>
-                <input type="text" placeholder={'Emailingiz'}/>
-                <input type="text" placeholder={'Kurs nomi'}/>
-                <input type="text" placeholder={'Kurslar nomi'}/>
-                <button>Jo'natish</button>
+        <div className={'contact-forms img-background'}>
+            <div className={'contact-form'}>
+                <div className={'contact-form-text'}>
+                    <div>                    <h1 className={'contact-form-text-h1'}>Kasb tanlashdagi birinchi yordamni beramiz!</h1>
+                        <p className={'contact-form-text-p'}>Ma’lumotlaringizni qoldiring va sizga tez fursatda aloqaga chiqamiz</p></div>
 
-        </div>
+
+                </div>
+
+                <div className={'contact-form-input'}>
+                    <input type="text" placeholder={'Ismingiz'}/>
+                    <input type="text" placeholder={'Telefon raqamingiz'}/>
+
+                    <button>Jo'natish</button>
+                    <p>Tugmani bosib, maxfiylik siyosati va foydalanuvchi shartnomasining shartlarini qabul qilgan bo'lasiz</p>
+                </div>
+            </div>
         </div>
 
 

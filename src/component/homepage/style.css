@@ -508,7 +508,6 @@
     margin-bottom: 0;
     border-radius: 10px;
     padding: 5px;
-    border-style: solid;
 
 }
 .kurslar-card>img{
@@ -568,4 +567,99 @@
     box-shadow: 0 0px 10px 0px rgb(66, 66, 67);
     transform: scale(0.9);
 
+}
+
+/*#################################contact##############################################*/
+
+.contact-forms{
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    padding: 10px;
+    background-image: url("./img/eve.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.contact-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    margin-top: 20px;
+    background-color: rgb(66, 66, 67 , 70%);
+}
+.contact-form-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    align-content: start;
+    width: 60%;
+    height: 100%;
+    padding: 10px;
+    margin: 20px;
+}
+.contact-form-text-h1{
+    color: #d8d8d8;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 2.5rem;
+    background-color: rgb(66, 66, 67 , 70%);
+    border-radius: 10px;
+    padding: 20px;
+}
+.contact-form-text-p{
+    color: white;
+    letter-spacing: 1px;
+    background-color: rgb(66, 66, 67 , 70%);
+    border-radius:10px;
+    padding: 20px;
+
+}
+.contact-form-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 40%;
+    height: 100%;
+    padding: 40px;
+    margin-top: 30px;
+    background-color: rgb(69, 69, 70,50%);
+    border-radius: 10px;
+}
+
+.contact-form-input>button{
+    align-items: center;
+    align-content: center;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(216, 216, 216 ,130%) ;
+    color: #000000;
+    cursor: pointer;
+}
+.contact-form-input>button:hover {
+    background-color: rgb(216, 216, 216, 100%);
+    transform: scale(1.1);
+}
+.contact-form-input>input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 10px 0;
+}
+.contact-form-input>p{
+    color: white;
+    font-size: 0.8rem;
+    font-family:  Ubuntu, sans-serif;
+    letter-spacing: 1px;
+    margin: 5px 0;
 }
