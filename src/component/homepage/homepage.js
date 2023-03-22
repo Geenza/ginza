@@ -3,7 +3,7 @@ import './style.css'
 import logo from './icons8-bash-480.svg'
 import img from './img/eve.jpg'
 import wall from './img/wall.jpg'
-import robot from './img/robot.png'
+import robot from './img/eve wall.jpg'
 
 
 
@@ -259,12 +259,52 @@ function Homepage() {
 
                 <div className={'contact-form-input'}>
                     <input type="text" placeholder={'Ismingiz'}/>
-                    <input type="text" placeholder={'Telefon raqamingiz'}/>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder={'Telefon raqamingiz'}/>
 
                     <button>Jo'natish</button>
                     <p>Tugmani bosib, maxfiylik siyosati va foydalanuvchi shartnomasining shartlarini qabul qilgan bo'lasiz</p>
                 </div>
             </div>
+        </div>
+
+        <div className={'footer'}>
+            <div className={'footer-section'}>
+                <div className={'logo'}>
+                    <img src={logo} alt="logo" />
+                    <h1>Ginza</h1>
+                </div>
+                <div className={'number title log'}>+998900046465</div>
+                <div className={'location title log'}>TATU </div>
+                <div className={'icon title log'}>sherzamon</div>
+            </div>
+            <div className={'footer-section'}>
+                <p className={'title'}>Platforma</p>
+                <p className={'text-title'}>Kasblar</p>
+                <p className={'text-title'}>Kurslar</p>
+
+            </div>
+            <div className={'footer-section'}>
+                <p className={'title'}>Kompaniya</p>
+                <p className={'text-title'}>Biz haqimizda</p>
+                <p className={'text-title'}>Blog</p>
+                <p className={'text-title'}>Ommaviy oferta</p>
+                <p className={'text-title'}>Maxfiylik siyosati</p>
+
+
+            </div>
+            <div className={'footer-section'}>
+
+                <p className={'title'}>Ma’lumot</p>
+                <p className={'text-title'}>Bog'lanish</p>
+                <p className={'text-title'}>Bo'lib to'lash</p>
+                <p className={'text-title'}>Qanday xarid qilinadi?</p>
+                <p className={'text-title'}>Voucher qo'llanma</p>
+                <p className={'text-title'}>Chegirmalar</p>
+            </div>
+
+
+
+
         </div>
 
 
