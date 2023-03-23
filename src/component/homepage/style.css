@@ -219,6 +219,33 @@
 
 
 }
+.imgs{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 22%;
+    height: 300px;
+    max-height: 400px;
+}
+.img1{
+    background-image: url("./img/pxfuel.jpg");
+
+}
+.img2{
+    background-image: url("./img/pxfuel (1).jpg");
+
+}
+.img3{
+    background-image: url("./img/bag2.png");
+
+}
+.img4{
+    background-image: url("./img/aaa.png");
+
+}
+
+
 .card:hover{
     box-shadow: 0px 0px 30px 0px rgb(255, 255, 255);
     background-color: rgb(66, 66, 67 , 90%);
@@ -227,12 +254,17 @@
 
 }
 .card>h2{
-    color: #d3d5d7;
-    font-size: 1.5rem;
+    color: #454546;
+    font-size: 1.2rem;
     transition: transform .6s;
+    background-color: #d6d6d6;
+    font-family: "Arial Black",sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+
 }
 .card>h2:hover{
-    color: #ffffff;
+    color: #000000;
 
 }
 
@@ -315,7 +347,7 @@
 
 }
 .about-video>iframe:hover{
-    transform: scale(1.03);
+    transform: scale(1.2);
     box-shadow: 0 0 30px 0 rgb(187, 187, 187);
 }
 
@@ -677,8 +709,8 @@
     align-content: center;
     padding: 20px;
     margin-top: 40px;
-    box-shadow: 10px 5px 15px 35px rgb(187, 187, 187);
-    margin-bottom: 40px;
+    box-shadow: 10px 5px 15px 30px rgb(187, 187, 187);
+    margin-bottom: 20px;
 }
 .footer-section{
     display: flex;
@@ -697,12 +729,15 @@
     font-size: 20px;
     font-family: "Arial Black", sans-serif;
     transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
+
 }
 
-.text-title {
+.text-title{
     text-decoration: none;
-    color: #ffffff;
-    font-size: 17px;
+    letter-spacing: 2px;
+    color: #d8d8d8;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
     transition: all 0.3s ease-in-out;
     padding: 0;
@@ -710,4 +745,27 @@
 }
 .log{
     padding-left: 30px;
+}
+.iconss{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+
+}
+.icon1{
+    max-width: 40px;
+    max-height: 40px;
+    margin: 10px 60px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.7;
+}
+.icon1:hover{
+    transform: scale(1.4);
+    opacity: 0.8;
+    cursor: pointer;
+
 }

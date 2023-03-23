@@ -5,6 +5,7 @@ body{
     background-color: #ffffff;
     width: 100%;
     height: 2000px;
+    cursor: default;
 
 
 }
@@ -21,3 +22,4 @@ body{
     flex-direction: column;
     background-color: #ffffff;
 }
+

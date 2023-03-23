@@ -1,10 +1,15 @@
 import React from "react";
 import './style.css'
-import logo from './icons8-bash-480.svg'
-import img from './img/eve.jpg'
+import logo from './icons/icons8-bash-480.svg'
 import wall from './img/wall.jpg'
 import robot from './img/eve wall.jpg'
-
+import video from './video/kupe.mp4'
+// icons ######
+import telegram from './icons/telegram.svg'
+import facebook from './icons/facebook.svg'
+import instagram from './icons/instagram.svg'
+import twitter from './icons/twitter.svg'
+import mail from './icons/envelope-solid.svg'
 
 
 function Homepage() {
@@ -66,16 +71,16 @@ function Homepage() {
         <div className="courses">
             <div className="courses-content">
                 <div className={'cards'}>
-                    <div className={'card'}>
+                    <div className={'card img1 imgs'}>
                         <h2>Tezkor kurslar</h2>
                     </div>
-                    <div className={'card'}>
+                    <div className={'card img2 imgs'}>
                         <h2>Praktikum kurslar</h2>
                     </div>
-                    <div className={'card'}>
+                    <div className={'card img3 imgs'}>
                         <h2>Chuqurlashtirilgan kurslar</h2>
                     </div>
-                    <div className={'card'}>
+                    <div className={'card img4 imgs'}>
                         <h2 className={'btn-4'}>Maxsus praktikum kurslar</h2>
                     </div>
                 </div>
@@ -90,7 +95,7 @@ function Homepage() {
                     <div/>
                 </div>
                 <div className={'about-video'}>
-                    <iframe/>
+                    <iframe src={video} />
                 </div>
 
             </div>
@@ -266,7 +271,6 @@ function Homepage() {
                 </div>
             </div>
         </div>
-
         <div className={'footer'}>
             <div className={'footer-section'}>
                 <div className={'logo'}>
@@ -275,48 +279,51 @@ function Homepage() {
                 </div>
                 <div className={'number title log'}>+998900046465</div>
                 <div className={'location title log'}>TATU </div>
-                <div className={'icon title log'}>sherzamon</div>
-            </div>
-            <div className={'footer-section'}>
-                <p className={'title'}>Platforma</p>
-                <p className={'text-title'}>Kasblar</p>
-                <p className={'text-title'}>Kurslar</p>
 
             </div>
             <div className={'footer-section'}>
-                <p className={'title'}>Kompaniya</p>
-                <p className={'text-title'}>Biz haqimizda</p>
-                <p className={'text-title'}>Blog</p>
-                <p className={'text-title'}>Ommaviy oferta</p>
-                <p className={'text-title'}>Maxfiylik siyosati</p>
+                <a className={'title'} href=""> Platforma</a>
+                <a  className={'text-title'} href="">Kasblar</a>
+                <a  className={'text-title'} href="">Kurslar</a>
 
 
             </div>
             <div className={'footer-section'}>
+                <a className={'title'} href=""> Kompaniya</a>
+                <a  className={'text-title'} href="">Biz haqimizda</a>
+                <a  className={'text-title'} href="">Blog</a>
+                <a  className={'text-title'} href="">Ommaviy oferta</a>
+                <a  className={'text-title'} href="">Maxfiylik siyosati</a>
 
-                <p className={'title'}>Ma’lumot</p>
-                <p className={'text-title'}>Bog'lanish</p>
-                <p className={'text-title'}>Bo'lib to'lash</p>
-                <p className={'text-title'}>Qanday xarid qilinadi?</p>
-                <p className={'text-title'}>Voucher qo'llanma</p>
-                <p className={'text-title'}>Chegirmalar</p>
+
+
+
+
+            </div>
+            <div className={'footer-section'}>
+                <a className={'title'} href="">Ma'lumot</a>
+                <a  className={'text-title'} href="">Bog'lanish</a>
+                <a  className={'text-title'} href="">Bo'lib to'lash</a>
+                <a  className={'text-title'} href="">Qanday xarid qilinadi?</a>
+                <a  className={'text-title'} href="">Voucher qo'llanma</a>
+                <a  className={'text-title'} href="">Chegirmalar</a>
+
+
             </div>
 
 
 
 
         </div>
-
-
-
-
-
-
-    </div>
-  );
-}
+        <div className={'iconss'}>
+            <img className={'icon1'} src={facebook} alt=""/>
+            <img className={'icon1'}  src={instagram} alt=""/>
+            <img  className={'icon1'} src={twitter} alt=""/>
+            <img className={'icon1'}  src={mail} alt=""/>
+            <img  className={'icon1'} src={telegram} alt=""/>
+        </div>
+    </div>);}
 export default Homepage;
-
 
 
 
