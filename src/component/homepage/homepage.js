@@ -95,7 +95,9 @@ function Homepage() {
                     <div/>
                 </div>
                 <div className={'about-video'}>
-                    <iframe src={video} />
+                    <iframe
+                        src={video+'?autoplay=0&mute=1&loop=1&controls=1&showinfo=1&rel=1'}
+                    />
                 </div>
 
             </div>

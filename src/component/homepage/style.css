@@ -220,13 +220,9 @@
 
 }
 .imgs{
-
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 22%;
-    height: 300px;
-    max-height: 400px;
 }
 .img1{
     background-image: url("./img/pxfuel.jpg");
@@ -237,11 +233,11 @@
 
 }
 .img3{
-    background-image: url("./img/bag2.png");
+    background-image: url("./img/bag2.jpg");
 
 }
 .img4{
-    background-image: url("./img/aaa.png");
+    background-image: url("./img/aaa.jpg");
 
 }
 
